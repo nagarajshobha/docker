@@ -53,7 +53,7 @@
 	  <configuration>
 	  <archive>
 	    <manifest>
-		<mainClass>com.mkyong.core.App</mainClass>
+		<mainClass>com.java</mainClass>
 	    </manifest>
 	  </archive>
 	</configuration>
