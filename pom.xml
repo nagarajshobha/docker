@@ -26,7 +26,7 @@
   </dependencies>
 
   <build>
-	  <finalName>javaapp</finalName>
+	  <finalName>javaapp</finialName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -49,7 +49,14 @@
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
+	  <version>3.0.2</version>
+	  <configuration>
+	  <archive>
+	    <manifest>
+		<mainClass>com.mkyong.core.App</mainClass>
+	    </manifest>
+	  </archive>
+	</configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
